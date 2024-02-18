@@ -104,10 +104,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\wlsdn\OneDrive\문서\바탕 화면\2024\Personal Project\SimpleAudioAnalyzer\src\FFTW;C:\Users\wlsdn\OneDrive\문서\바탕 화면\2024\Personal Project\SimpleAudioAnalyzer\src\sndfile;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\wlsdn\OneDrive\문서\바탕 화면\2024\Personal Project\SimpleAudioAnalyzer\src\sndfile;C:\Users\wlsdn\OneDrive\문서\바탕 화면\2024\Personal Project\SimpleAudioAnalyzer\src\FFTW;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>fftw3f.lib;fftw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
